@@ -18,6 +18,7 @@ def find_blank(array, location):
                 return True
     return False
 
+#To-Do put all of the other checks into this one
 def check_if_valid(array, row, column, number):
     if(not used_in_row(array, row, number) and not used_in_column(array, column, number) and not used_in_subgrid(array, row - row%3, column - column%3, number)):
         return True
